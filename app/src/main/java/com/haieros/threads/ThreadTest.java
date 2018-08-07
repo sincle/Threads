@@ -14,8 +14,8 @@ public class ThreadTest extends Thread{
         }
     }
     public static void main(String[] args) throws InterruptedException {
-        // 启动子进程
-        new ThreadTest("new thread").start();
+        // 启动子线程
+        //new ThreadTest("new thread").start();
         for (int i = 0; i < 10; i++) {
             if (i == 5) {
                 ThreadTest th = new ThreadTest("joined thread");
